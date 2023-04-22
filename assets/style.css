@@ -1,0 +1,83 @@
+:root {
+    /*** PALETTE ONE
+    --dark-purple: #160F29;
+    --deep-turquoise: #246A73;
+    --turquoise: #368F8B;
+    --cream: #F3DFC1;
+    --peach: #DDBEA8;
+
+    /*** PALETTE TWO 
+    --dk-grey: #5A5353;
+    --mauve: #A07178;
+    --pearl: #E6CCBE;
+    --violet: #776274;
+    --sage: #C8cc92;
+
+    /*** PALETTE THREE ***/
+    --light-blue: #B5B5B5;
+    --medium-blue: #7A9E9F;
+    --dk-blue: #4F6367;
+    --beige: #EEF5DB;
+    --accent-orange: #FE5F55;
+}
+/** font family css 
+font-family: 'Amaranth', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/*** DOCUMENT DEFAULTS fall back font sizes*/
+html {
+    font-size: 16px;
+}
+/*** larger screens and desktops */
+@media only screen and (max-width: 1200px){
+  html {
+    font-size: 15px;
+  }
+}
+/*** laptops */
+@media only screen and (max-width: 992px){
+   
+}
+/*** tablets */
+@media only screen and (max-width: 768px){
+ html {
+    font-size: 13px;
+ }
+}
+/*** small phones */
+@media only screen and (max-width: 600px){
+
+}
+
+/*** sections to scale with document */
+
+header {
+    font-size: 1.5rem;
+}
+footer {
+    font-size: .75rem;
+}
+body {
+    font-size: 1rem;
+}
+
+/*** Fonts to scale within sections */
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3 {
+    font-size: 2em;
+}
+a {
+    color: var(--accent-orange);
+}
+p {
+    font-size: 1em;
+}
+
+/*** css classes 
