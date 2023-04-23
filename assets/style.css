@@ -29,7 +29,9 @@ html {
 }
 /*** tablets */
 @media only screen and (max-width: 768px){
-
+ .card {
+   width: 100%;
+ }
 }
 /*** small phones */
 @media only screen and (max-width: 600px){
@@ -54,7 +56,7 @@ footer {
 }
 body {
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: var(--dark-text);
 }
 /*** Fonts to scale within sections */
@@ -136,8 +138,9 @@ aside {
     text-align: end;
     padding: 20px;
     border-right: 4px solid var(--cadet-gray);
-    width: 15%;
     align-items: flex-start;
+    justify-content: flex-end;
+    width: 15%;
 }
 
 .main-section {
@@ -147,15 +150,60 @@ aside {
 
 }
 .content {
+    width: 85%;
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
-
-.about{
+.featured-card {
+    background-image: url(./buildersbuddy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+}
+.card-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-top: 30px;
+}
+.card-header {
 
 }
-.work {
-
+#one {
+    background-image: url(./buildersbuddy.jpg);
 }
-.contact {
-
+#two {
+    background-image: url(./buildersbuddy.jpg);
+}
+#three {
+    background-image: url(./buildersbuddy.jpg);
+}
+#four {
+    background-image: url(./buildersbuddy.jpg);
+}
+#five {
+    background-image: url(./buildersbuddy.jpg);
+}
+#six {
+    background-image: url(./buildersbuddy.jpg);
+}
+#seven {
+    background-image: url(./buildersbuddy.jpg);
+}
+#eight {
+    background-image: url(./buildersbuddy.jpg);
 }
