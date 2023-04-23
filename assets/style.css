@@ -5,9 +5,9 @@
     --ash-gray: #A7B4B5ff;
     --english-violet: #483948ff;
     --khaki: #CCB69Fff;
-  /*  --dark-text: #2C3E5A;
-    --dark-text: #0A1A36;*/
-    --dark-text: #848482;
+  /*  --dark-text: #2C3E5A;*/
+    --dark-text: #686D75;
+    /* --dark-text: #57504d;*/ 
 }
 /** font family css 
 font-family: 'Amaranth', sans-serif;
@@ -54,7 +54,7 @@ footer {
 }
 body {
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--dark-text);
 }
 /*** Fonts to scale within sections */
@@ -105,13 +105,22 @@ p {
     background-size: cover;
     height: 800px;
     position:relative;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .hero-title {
     position: absolute;
     top: 5%;
-    width: 100%; 
-    text-align: center; 
+    width: 100%;  
+}
+hr.hero-hr {
+    border: 0;
+    border-top: 3px solid var(--english-violet);
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+;
 }
 .main-container {
     display: flex;
@@ -126,7 +135,7 @@ p {
 aside {
     text-align: end;
     padding: 20px;
-    border-right: 4px solid var(--dark-text);
+    border-right: 4px solid var(--cadet-gray);
     width: 15%;
     align-items: flex-start;
 }
