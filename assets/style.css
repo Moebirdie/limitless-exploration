@@ -1,24 +1,10 @@
 :root {
-    /*** PALETTE ONE
-    --dark-purple: #160F29;
-    --deep-turquoise: #246A73;
-    --turquoise: #368F8B;
-    --cream: #F3DFC1;
-    --peach: #DDBEA8;
-
-    /*** PALETTE TWO 
-    --dk-grey: #5A5353;
-    --mauve: #A07178;
-    --pearl: #E6CCBE;
-    --violet: #776274;
-    --sage: #C8cc92;
-
-    /*** PALETTE THREE ***/
-    --light-blue: #B5B5B5;
-    --medium-blue: #7A9E9F;
-    --dk-blue: #4F6367;
-    --beige: #EEF5DB;
-    --accent-orange: #FE5F55;
+ /*** COLOR PALETTE */
+    --alabaster: #E0E3D8ff;
+    --cadet-gray: #969D9Fff;
+    --ash-gray: #A7B4B5ff;
+    --english-violet: #483948ff;
+    --khaki: #CCB69Fff;
 }
 /** font family css 
 font-family: 'Amaranth', sans-serif;
@@ -54,30 +40,55 @@ html {
 /*** sections to scale with document */
 
 header {
-    font-size: 1.5rem;
+    background-color: var(--english-violet);
+    font-size: 1.25rem;
+    font-family: 'Amaranth', sans-serif;
+    color: var(--alabaster);
 }
 footer {
     font-size: .75rem;
 }
 body {
     font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
 }
-
 /*** Fonts to scale within sections */
 h1 {
     font-size: 3em;
+    font-family: 'Amaranth', sans-serif;
+    color: var(--english-violet);
 }
 h2 {
     font-size: 2.5em;
+    font-family: 'Amaranth', sans-serif;
+    color: var(--cadet-gray);
 }
 h3 {
     font-size: 2em;
-}
+    font-family: 'Amaranth', sans-serif;
+    color: var(--khaki);
+}    
 a {
-    color: var(--accent-orange);
+    color: var(--ash-gray);
 }
 p {
     font-size: 1em;
 }
 
-/*** css classes 
+/*** css classes */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.navigation li a {
+    color: var(--alabaster);
+    text-decoration: none;
+    padding: 20px 20px;
+
+}
