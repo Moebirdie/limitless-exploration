@@ -1,0 +1,149 @@
+:root {
+ /*** COLOR PALETTE */
+    --alabaster: #E0E3D8ff;
+    --cadet-gray: #969D9Fff;
+    --ash-gray: #A7B4B5ff;
+    --english-violet: #483948ff;
+    --khaki: #CCB69Fff;
+}
+/** font family css 
+font-family: 'Amaranth', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+/*** DOCUMENT DEFAULTS fall back font sizes*/
+html {
+    font-size: 100%;
+}
+/*** larger screens and desktops */
+@media only screen and (max-width: 1200px){
+
+}
+/*** laptops */
+@media only screen and (max-width: 992px){
+   
+}
+/*** tablets */
+@media only screen and (max-width: 768px){
+
+}
+/*** small phones */
+@media only screen and (max-width: 600px){
+  .navigation li a {
+    font-size: 100px;
+  }
+}
+/*** sections to scale with document */
+
+header {
+    background-color: var(--english-violet);
+    font-family: 'Amaranth', sans-serif;
+    color: var(--alabaster);
+}
+footer {
+    background-color: var(--english-violet);
+    color: var(--alabaster);
+    font-size: .75rem;
+    width: 100%;
+    text-align: center;
+    padding: 40px 10px;
+}
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+/*** Fonts to scale within sections */
+h1 {
+    font-size: 3em;
+    font-family: 'Amaranth', sans-serif; 
+ /*   font-family: 'Open Sans', sans-serif; */
+    letter-spacing: .5px;
+    color: var(--english-violet);
+}
+h2 {
+    font-size: 2.5em;
+    font-family: 'Amaranth', sans-serif;
+    color: var(--cadet-gray);
+}
+h3 {
+    font-size: 2em;
+    font-family: 'Amaranth', sans-serif;
+    color: var(--alabaster);
+    margin-bottom: 20px;
+}    
+a {
+    color: var(--ash-gray);
+}
+p {
+    font-size: 1em;
+}
+
+/*** css classes */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+.navigation li a {
+    color: var(--alabaster);
+    text-decoration: none;
+    padding: 20px 20px; 
+    font-size: 20px;
+}
+.hero {
+    background-image: url(./istockphoto-971246796-1024x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    position:relative;
+
+}
+.hero-title {
+    position: absolute;
+    top: 5%;
+    width: 100%; 
+    text-align: center; 
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+aside {
+    text-align: end;
+    padding: 20px;
+    border-right: 4px solid var(--cadet-gray);
+    width: 15%;
+    align-items: flex-start;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: row;    
+    padding: 20px;
+
+}
+.content {
+    padding: 20px;
+}
+
+.about{
+
+}
+.work {
+
+}
+.contact {
+
+}
