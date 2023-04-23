@@ -5,6 +5,9 @@
     --ash-gray: #A7B4B5ff;
     --english-violet: #483948ff;
     --khaki: #CCB69Fff;
+  /*  --dark-text: #2C3E5A;*/
+    --dark-text: #686D75;
+    /* --dark-text: #57504d;*/ 
 }
 /** font family css 
 font-family: 'Amaranth', sans-serif;
@@ -51,8 +54,8 @@ footer {
 }
 body {
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark-text);
 }
 /*** Fonts to scale within sections */
 h1 {
@@ -102,13 +105,22 @@ p {
     background-size: cover;
     height: 800px;
     position:relative;
-
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 .hero-title {
     position: absolute;
     top: 5%;
-    width: 100%; 
-    text-align: center; 
+    width: 100%;  
+}
+hr.hero-hr {
+    border: 0;
+    border-top: 3px solid var(--english-violet);
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+;
 }
 .main-container {
     display: flex;
@@ -135,7 +147,7 @@ aside {
 
 }
 .content {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .about{
