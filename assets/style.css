@@ -8,6 +8,9 @@
   /*  --dark-text: #2C3E5A;*/
     --dark-text: #686D75;
     /* --dark-text: #57504d;*/ 
+  /*  --accent-blue:#A6BFC0;*/
+    --accent-blue: #2E3E59;
+  /*  --accent-blue: #DFAF89;*/
 }
 /** font family css 
 font-family: 'Amaranth', sans-serif;
@@ -73,19 +76,29 @@ h2 {
     color: var(--cadet-gray);
 }
 h3 {
+    font-size: 1.5em;
+    font-family: 'Amaranth', sans-serif;
+    color: var(--english-violet);
+    margin-bottom: 5px;
+}
+h4 {
     font-size: 2em;
     font-family: 'Amaranth', sans-serif;
     color: var(--alabaster);
     margin-bottom: 20px;
-}    
+}        
 a {
-    color: var(--ash-gray);
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 1em;
+    display: inline-flex;
 }
 p {
     font-size: 1em;
+    line-height: 1.1;
 }
 
-/*** css classes */
+/*** css classes - main components*/
 .navigation {
     display: flex;
     flex-direction: row;
@@ -100,29 +113,6 @@ p {
     text-decoration: none;
     padding: 20px 20px; 
     font-size: 20px;
-}
-.hero {
-    background-image: url(./istockphoto-971246796-1024x1024.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 800px;
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.hero-title {
-    position: absolute;
-    top: 5%;
-    width: 100%;  
-}
-hr.hero-hr {
-    border: 0;
-    border-top: 3px solid var(--english-violet);
-    width: 20%;
-    margin: auto;
-    margin-top: 10px;
-;
 }
 .main-container {
     display: flex;
@@ -149,12 +139,37 @@ aside {
     padding: 20px;
 
 }
+/*** css classes - section details*/
+.hero {
+    background-image: url(./exploration.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.hero-title {
+    position: absolute;
+    top: 5%;
+    width: 100%;  
+}
+hr.hero-hr {
+    border: 0;
+    border-top: 3px solid var(--english-violet);
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+}
 .content {
     width: 85%;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
+/**  CARD CSS  ***/
+
 .featured-card {
     background-image: url(./buildersbuddy.jpg);
     background-repeat: no-repeat;
@@ -163,6 +178,11 @@ aside {
     position:relative;
     display: flex;
     flex-direction: column;
+    box-shadow: 3px 5px 10px var(--ash-gray);
+}
+.featured-small-text {
+    font-variant: small-caps;
+    font-size: .75em;
 }
 .card-container {
     display:flex;
@@ -179,31 +199,58 @@ aside {
     flex-direction: column;
     width: 48%;
     margin-top: 30px;
+    position: relative;
+    box-shadow: 3px 5px 10px var(--ash-gray);
 }
-.card-header {
+.card-title {
+    background-color: rgba(224, 227, 216, .8);
+    padding:10px;
+    text-align: right;
+    width: 50%;
+    position: absolute;
+    bottom:10%;
+    color: var(--english-violet);
+}
+.card-subtitle {
+    padding-bottom: 10px;
+}
+.card-title a::after {
+    content: url(./new-right-arrow-sm.png);
+    align-content: center;
+    padding-left: 5px;
+}
+.featured-title {
+        width: 30%;
+    }
 
-}
 #one {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./comingsoon.png);
 }
 #two {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./comingsoon.png);
 }
 #three {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./comingsoon.png);
 }
 #four {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./comingsoon.png);
 }
 #five {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./comingsoon.png);
 }
 #six {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./jscalculator.jpg);
 }
 #seven {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./cards1.jpg);
 }
 #eight {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./comingsoon.png);
+}
+/***** MISC CSS  ****/
+
+.attribution {
+    width: 100%;
+    justify-content: right;
+    color: var(--alabaster);
 }
