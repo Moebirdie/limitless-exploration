@@ -5,6 +5,9 @@
     --ash-gray: #A7B4B5ff;
     --english-violet: #483948ff;
     --khaki: #CCB69Fff;
+  /*  --dark-text: #2C3E5A;
+    --dark-text: #0A1A36;*/
+    --dark-text: #848482;
 }
 /** font family css 
 font-family: 'Amaranth', sans-serif;
@@ -51,8 +54,8 @@ footer {
 }
 body {
     font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-text);
 }
 /*** Fonts to scale within sections */
 h1 {
@@ -123,7 +126,7 @@ p {
 aside {
     text-align: end;
     padding: 20px;
-    border-right: 4px solid var(--cadet-gray);
+    border-right: 4px solid var(--dark-text);
     width: 15%;
     align-items: flex-start;
 }
@@ -135,7 +138,7 @@ aside {
 
 }
 .content {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .about{
