@@ -16,6 +16,9 @@
 font-family: 'Amaranth', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
+html {
+    scroll-behavior:smooth;
+}
 
 /*** sections to scale with document */
 
@@ -48,7 +51,7 @@ h1 {
 h2 {
     font-size: 2.5em;
     font-family: 'Amaranth', sans-serif;
-    color: var(--cadet-gray);
+    color: var(--dark-text);
 }
 h3 {
     font-size: 2em;
@@ -102,7 +105,7 @@ aside {
     text-align: end;
     padding: 20px;
     padding-top: 0;
-    border-right: 4px solid var(--cadet-gray);
+    border-right: 4px solid var(--dark-text);
     align-items: flex-start;
     justify-content: flex-end;
     width: 15%;
@@ -158,13 +161,13 @@ hr.hero-hr {
 }
 .about-content {
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .about-content-text {
     padding-left: 20px;
 }
 .photo {
-    border-radius: 50%;
+   /* border-radius: 50%; */
 }
 
 /**  CARD CSS  ***/
@@ -204,7 +207,7 @@ hr.hero-hr {
 .card-title {
     background-color: rgba(224, 227, 216, .8);
     padding:10px;
-    text-align: right;
+    text-align: left;
     width: 60%;
     position: absolute;
     bottom:10%;
