@@ -17,31 +17,6 @@ font-family: 'Amaranth', sans-serif;
 font-family: 'Open Sans', sans-serif;
 */
 
-
-/*** DOCUMENT DEFAULTS fall back font sizes*/
-html {
-    font-size: 100%;
-}
-/*** larger screens and desktops */
-@media only screen and (max-width: 1200px){
-
-}
-/*** laptops */
-@media only screen and (max-width: 992px){
-   
-}
-/*** tablets */
-@media only screen and (max-width: 768px){
- .card {
-   width: 100%;
- }
-}
-/*** small phones */
-@media only screen and (max-width: 600px){
-  .navigation li a {
-    font-size: 100px;
-  }
-}
 /*** sections to scale with document */
 
 header {
@@ -58,31 +33,31 @@ footer {
     padding: 40px 10px;
 }
 body {
-    font-size: 1rem;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: var(--dark-text);
 }
-/*** Fonts to scale within sections */
+/*** Standard Fonts */
 h1 {
-    font-size: 3em;
+    font-size: 48px;
     font-family: 'Amaranth', sans-serif; 
  /*   font-family: 'Open Sans', sans-serif; */
     letter-spacing: .5px;
     color: var(--english-violet);
 }
 h2 {
-    font-size: 2.5em;
+    font-size: 36px;
     font-family: 'Amaranth', sans-serif;
     color: var(--cadet-gray);
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 24px;
     font-family: 'Amaranth', sans-serif;
     color: var(--english-violet);
     margin-bottom: 5px;
 }
 h4 {
-    font-size: 2em;
+    font-size: 24px;
     font-family: 'Amaranth', sans-serif;
     color: var(--alabaster);
     margin-bottom: 20px;
@@ -90,11 +65,9 @@ h4 {
 a {
     color: var(--accent-blue);
     font-weight: 600;
-    font-size: 1em;
     display: inline-flex;
 }
 p {
-    font-size: 1em;
     line-height: 1.1;
 }
 
@@ -253,4 +226,35 @@ hr.hero-hr {
     width: 100%;
     justify-content: right;
     color: var(--alabaster);
+}
+/*** larger screens and desktops */
+@media only screen and (max-width: 1200px){
+    aside {
+        display: flex;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        transform:  rotate(-180deg);
+        border-right: 0px solid var(--cadet-gray);
+        border-left: 4px solid var(--cadet-gray);
+        align-items: self-end;
+        padding: 0;
+        padding-left: 10px;
+        width: 10%;
+     }
+}
+/*** laptops */
+@media only screen and (max-width: 992px){
+
+}
+/*** tablets */
+@media only screen and (max-width: 768px){
+ .card {
+   width: 100%;
+ }
+}
+/*** small phones */
+@media only screen and (max-width: 600px){
+  .navigation li a {
+    font-size: 100px;
+  }
 }
