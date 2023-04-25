@@ -173,7 +173,7 @@ hr.hero-hr {
 /**  CARD CSS  ***/
 
 .featured-card {
-    background-image: url(./buildersbuddy.jpg);
+    background-image: url(./builderbuddy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
@@ -196,7 +196,7 @@ hr.hero-hr {
 .card {
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     width: 48%;
@@ -227,28 +227,28 @@ hr.hero-hr {
 /*** CARD IMAGES */
 
 #one {
-    background-image: url(./comingsoon.png);
+    background-image: url(./comingsoon.jpg);
 }
 #two {
-    background-image: url(./comingsoon.png);
+    background-image: url(./comingsoon.jpg);
 }
 #three {
-    background-image: url(./comingsoon.png);
+    background-image: url(./comingsoon.jpg);
 }
 #four {
-    background-image: url(./comingsoon.png);
+    background-image: url(./comingsoon.jpg);
 }
 #five {
-    background-image: url(./comingsoon.png);
+    background-image: url(./comingsoon.jpg);
 }
 #six {
     background-image: url(./jscalculator.jpg);
 }
 #seven {
-    background-image: url(./cards1.jpg);
+    background-image: url(./cards.jpg);
 }
 #eight {
-    background-image: url(./comingsoon.png);
+    background-image: url(./comingsoon.jpg);
 }
 /*** MEDIA QUERIES */
 /*** larger screens and desktops */
@@ -305,6 +305,9 @@ hr.hero-hr {
     .featured-title {
         width: 60%;
     }
+    .hero {
+        height: 600px;
+    }
     .hero-subtitle {
         bottom: 0;
         width: 100%;
@@ -317,7 +320,7 @@ hr.hero-hr {
         text-align: center;
   }
     .main-container {
-        padding: 0 10px;
+        padding: 20px 10px;
   }
     hr {
         display: none;
@@ -329,7 +332,22 @@ hr.hero-hr {
     .featured-title {
         width: 100%;
     }
+    .about-content {
+        flex-direction: column;
+    }
+    .about-content-text {
+        padding:0;
+        padding-top: 10px;
+    }
     .hero {
-        background-image: url(./limitless-mobile.jpg);
+        background-image: url(./limitless-tablet1.png);
+    }
+    .photo {
+       width: 25%; 
     }    
+}
+@media only screen and (max-width: 400px){
+    .photo {
+        width: 40%; 
+    }
 }
