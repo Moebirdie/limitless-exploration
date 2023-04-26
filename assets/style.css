@@ -5,6 +5,7 @@
     --english-violet: #483948ff;
     --dark-text: #686D75;
     --accent-blue: #2E3E59;
+    --ash-gray:#A7B4B5ff;;
  }
 
 html {
@@ -179,6 +180,10 @@ hr.hero-hr {
     position:relative;
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 2px 5px var(--ash-gray);
+}
+
+.featured-card:hover{ 
     box-shadow: 3px 5px 10px var(--ash-gray);
 }
 .featured-small-text {
@@ -201,6 +206,10 @@ hr.hero-hr {
     width: 48%;
     margin-top: 30px;
     position: relative;
+    border: 1px solid #dfdfdf;
+    box-shadow: 2px 2px 5px var(--ash-gray);
+}
+.card:hover {
     box-shadow: 3px 5px 10px var(--ash-gray);
 }
 .card-title {
