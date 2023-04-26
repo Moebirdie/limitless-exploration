@@ -13,7 +13,7 @@ The site can be found at this url: https://moebirdie.github.io/limitless-explora
 ![image](https://user-images.githubusercontent.com/93432701/234470997-f287f50f-c6f3-44ad-8feb-122e077dece7.png)
 ![image](https://user-images.githubusercontent.com/93432701/234471017-9aee9d0d-b199-4065-8b26-dcb06b9a58da.png)
 
-The live url for the site is: [click here}(https://moebirdie.github.io/limitless-exploration)
+The live url for the site is: [click here](https://moebirdie.github.io/limitless-exploration)
 
 The GitHub repository is: [click here](https://github.com/Moebirdie/limitless-exploration)
 
