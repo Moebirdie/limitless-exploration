@@ -2,20 +2,11 @@
  /*** COLOR PALETTE */
     --alabaster: #E0E3D8ff;
     --cadet-gray: #969D9Fff;
-    --ash-gray: #A7B4B5ff;
     --english-violet: #483948ff;
-    --khaki: #CCB69Fff;
-  /*  --dark-text: #2C3E5A;*/
     --dark-text: #686D75;
-    /* --dark-text: #57504d;*/ 
-  /*  --accent-blue:#A6BFC0;*/
     --accent-blue: #2E3E59;
-    --link: #52798B;
-}
-/** font family css 
-font-family: 'Amaranth', sans-serif;
-font-family: 'Open Sans', sans-serif;
-*/
+ }
+
 html {
     scroll-behavior:smooth;
 }
@@ -44,7 +35,6 @@ body {
 h1 {
     font-size: 3em;
     font-family: 'Amaranth', sans-serif; 
- /*   font-family: 'Open Sans', sans-serif; */
     letter-spacing: .5px;
     color: var(--accent-blue);
 }
@@ -67,7 +57,7 @@ h4 {
     margin-bottom: 20px;
 }        
 a {
-    color: var(--accent-blue);
+    color: var(--dark-text);
     font-weight: 600;
     display: inline-flex;
 }
@@ -159,6 +149,9 @@ hr.hero-hr {
     display: flex;
     flex-direction: column;
 }
+.info {
+    align-self: center;
+}
 .about-content {
     display: inline-flex;
     align-items: flex-start;
@@ -166,10 +159,16 @@ hr.hero-hr {
 .about-content-text {
     padding-left: 20px;
 }
-.photo {
-   /* border-radius: 50%; */
+.contentinfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
 }
-
+.icon {
+    height:25px;
+    padding-right: 8px;
+}
 /**  CARD CSS  ***/
 
 .featured-card {
@@ -227,19 +226,19 @@ hr.hero-hr {
 /*** CARD IMAGES */
 
 #one {
-    background-image: url(./comingsoon.jpg);
+    background-image: url(./comingsoon1.jpg);
 }
 #two {
-    background-image: url(./comingsoon.jpg);
+    background-image: url(./comingsoon1.jpg);
 }
 #three {
-    background-image: url(./comingsoon.jpg);
+    background-image: url(./comingsoon1.jpg);
 }
 #four {
-    background-image: url(./comingsoon.jpg);
+    background-image: url(./comingsoon1.jpg);
 }
 #five {
-    background-image: url(./comingsoon.jpg);
+    background-image: url(./comingsoon1.jpg);
 }
 #six {
     background-image: url(./jscalculator.jpg);
@@ -248,7 +247,7 @@ hr.hero-hr {
     background-image: url(./cards.jpg);
 }
 #eight {
-    background-image: url(./comingsoon.jpg);
+    background-image: url(./comingsoon1.jpg);
 }
 /*** MEDIA QUERIES */
 /*** larger screens and desktops */
@@ -269,10 +268,8 @@ hr.hero-hr {
         width: 90%;
     } 
 }
-/*** laptops */
-@media only screen and (max-width: 992px){
+/*** laptops (N/A)*/
 
-}
 /*** tablets */
 @media only screen and (max-width: 768px){
     .main-section {
@@ -313,6 +310,13 @@ hr.hero-hr {
         width: 100%;
         text-align: center;
     }
+    .contentinfo {
+        flex-direction: column;
+     }
+     .contentinfo li {
+        padding: 15px 0;
+        font-size: 18px;
+     }
 }
 /*** small phones */
 @media only screen and (max-width: 600px){
@@ -340,7 +344,7 @@ hr.hero-hr {
         padding-top: 10px;
     }
     .hero {
-        background-image: url(./limitless-tablet1.png);
+        background-image: url(./limitless-tablet2.png);
     }
     .photo {
        width: 25%; 
