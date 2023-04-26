@@ -5,8 +5,20 @@ This project is the start of a portfolio for prospective employers.  Each projec
 
 The site can be found at this url: https://moebirdie.github.io/limitless-exploration/  and is fully mobile responsive.  
 
+
+
+## Site Images
+
+![image](https://user-images.githubusercontent.com/93432701/234470938-f775adac-06d7-4dbb-afe0-619e3e045635.png)
+![image](https://user-images.githubusercontent.com/93432701/234470997-f287f50f-c6f3-44ad-8feb-122e077dece7.png)
+![image](https://user-images.githubusercontent.com/93432701/234471017-9aee9d0d-b199-4065-8b26-dcb06b9a58da.png)
+
+
+
 ## Implementation
 Not applicable at this time
+
+## Usage
 
 ## License
 MIT License. See additional file.
