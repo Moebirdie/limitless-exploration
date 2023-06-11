@@ -213,7 +213,7 @@ hr.hero-hr {
     box-shadow: 3px 5px 10px var(--ash-gray);
 }
 .card-title {
-    background-color: rgba(224, 227, 216, .8);
+    background-color: rgba(224, 227, 216, .9);
     padding:10px;
     text-align: left;
     width: 60%;
@@ -247,16 +247,22 @@ hr.hero-hr {
     background-image: url(./comingsoon1.jpg);
 }
 #five {
-    background-image: url(./comingsoon1.jpg);
+    background-image: url(./stars.png);
 }
 #six {
     background-image: url(./jscalculator.jpg);
 }
 #seven {
-    background-image: url(./cards.jpg);
+    background-image: url(./codingquiz.png);
 }
 #eight {
-    background-image: url(./comingsoon1.jpg);
+    background-image: url(./storm.png);
+}
+#nine {
+    background-image: url(./cards.jpg);
+}
+#ten {
+    background-image: url(./planner.png);
 }
 /*** MEDIA QUERIES */
 /*** larger screens and desktops */
